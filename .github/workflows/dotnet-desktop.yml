@@ -25,11 +25,11 @@ jobs:
       run: dotnet restore
       
     - name: Build with dotnet
-      run: dotnet build --configuration Release .\AngularTest
+      run: dotnet build --configuration Release .\AngularTest\AngularTest
       
     - name: dotnet publish 
       run: |
-        dotnet publish -c Release -o dotnetcorewebapp .\AngularTest
+        dotnet publish -c Release -o dotnetcorewebapp .\AngularTest\AngularTest
         
     - name: Deploy to IIS
       run: |
