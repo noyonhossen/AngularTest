@@ -22,7 +22,7 @@ jobs:
         
     # dotnet build and publish
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore .\AngularTest\AngularTest\AngularTest.csproj
       
     - name: Build with dotnet
       run: dotnet build --configuration Release .\AngularTest\AngularTest
